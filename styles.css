@@ -14,5 +14,6 @@ img {
   height: auto;
 }
 .parallax-container {
-  height: 100px;
+  min-height: 280px;
+  height: auto;
 }
