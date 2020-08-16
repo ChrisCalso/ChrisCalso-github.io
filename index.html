@@ -1,110 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Chris Calso</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <body>
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="images/dc.jpg" class="responsive-img" alt="seattle" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Chris Calso</title>
+</head>
+
+<body>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/dc.jpg" class="responsive-img" alt="seattle" />
+    </div>
+  </div>
+  <br />
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Chris Calso</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Resume</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="collapsible.html"></a></li>
+      </ul>
+    </div>
+  </nav>
+  <h3>
+    <strong>Chris Calso is a Amazon Apprentice based in Seattle, WA</strong>
+  </h3>
+  <div class="row">
+    <div class="col m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Chris</span>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
       </div>
     </div>
-    <br />
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Chris Calso</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Resume</a></li>
-          <li><a href="badges.html">About me</a></li>
-          <li><a href="collapsible.html"></a></li>
-        </ul>
+
+    <div class="col m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Chris</span>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
       </div>
-    </nav>
-    <h3>
-      <strong>Chris Calso is a Amazon Apprentice based in Seattle, WA</strong>
-    </h3>
+    </div>
+
+    <div class="col m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Chris</span>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/palawan.jpg" class="responsive-img" alt="The islands" />
+    </div>
+  </div>
+  <p>
+    &nbsp;&nbsp; I graduated from Coding Dojo coding bootcamp in Bellevue, WA.
+    I enjoy travelling, and meeting new people around the world to learn more
+    about their culture. If you like food as much as I do feel free to add me
+    on Yelp @ChrisCalso.
+  </p>
+
+  <h2>Contact Me</h2>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Your First Name" id="first_name" type="text" class="validate" />
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" />
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" />
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" />
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".parallax");
+      var instances = M.Parallax.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+      $(".parallax").parallax();
+    });
+  </script>
+</body>
+<footer class="page-footer">
+  <div class="container">
     <div class="row">
-      <div class="col m4">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">Chris</span>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m4">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">Chris</span>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m4">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">Chris</span>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
-          </div>
-        </div>
+      <div class="col 16 s12">
+        <h5 class="black-text"> Keep in Touch!</h5>
       </div>
     </div>
+    <div class="row">
 
-    <div class="parallax-container">
-      <div class="parallax">
-        <img
-          src="images/palawan.jpg"
-          class="responsive-img"
-          alt="The islands"
-        />
+      <div class="col s3">
+        <a href="https://twitter.com/chriscalso" target="blank">
+          <i class="fa fa-twitter circle fa-3x"></i>
+        </a>
       </div>
+
+      <div class="col s3">
+        <a href="https://linkedin.com/in/christopher-calso" target="blank">
+          <i class="fa fa-linkedin fa-3x"></i>
+        </a>
+      </div>
+
+      <div class="col s3">
+        <a href="https://github.com/chriscalso" target="blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://snapchat.com/add/chriscalso" target="blank">
+          <i class="fa fa-snapchat-ghost fa-3x"></i>
+        </a>
+      </div>
+
+
     </div>
-    <p>
-      I graduated from Coding Dojo coding bootcamp in Bellevue, WA. I enjoy
-      travelling, and meeting new people around the world to learn more about
-      their culture. If you like food as much as I do feel free to add me on
-      Yelp @ChrisCalso.
-    </p>
 
-    <h2>Section 2</h2>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".parallax");
-        var instances = M.Parallax.init(elems, options);
-      });
 
-      // Or with jQuery
+  </div>
 
-      $(document).ready(function () {
-        $(".parallax").parallax();
-      });
-    </script>
-  </body>
-  <footer></footer>
+
+
+  <div class="footer-copyright">
+
+    © 2020 Copyright
+
+  </div>
+
+</footer>
+
 </html>

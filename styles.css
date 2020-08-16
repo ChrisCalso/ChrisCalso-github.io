@@ -1,5 +1,6 @@
 p {
   color: teal;
+  font-weight: 400;
 }
 
 h2 {
@@ -19,4 +20,25 @@ img {
 .parallax-container {
   min-height: 400px;
   height: 100%;
+}
+.icon {
+	i.circle {
+		font-size: 18px;
+		line-height: 42px;
+		color: #fff;
+		background-color: #999;
+		text-align: center;
+	}
+	.circle {
+		position: relative;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    float: center;
+		width: 42px;
+		height: 42px;
+		overflow: hidden;
+		left: 15px;
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
